@@ -11,3 +11,6 @@ You could use this as a demo app to help you learn about:
 * Cloning the 'slide to unlock' feature from the iPhone lock screen.
 * Using capistrano to deploy an iPhone app straight to your phone over SSH. (for jailbroken phones only)
 * etc.
+
+
+!http://www.f-77.com/wp-content/uploads/2010/12/photo3.png(screenshot)!
