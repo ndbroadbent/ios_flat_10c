@@ -1,0 +1,13 @@
+h1. Flat 10C iPhone app
+
+iPhone app for iOS 3.x/4.x to control my apartment.
+
+You could use this as a demo app to help you learn about:
+
+* InAppSettingsKit
+** Configure settings from within an iPhone app.
+* ASI HTTP library
+** Sending HTTP GET and POST requests with form data.
+* Cloning the 'slide to unlock' feature from the iPhone lock screen.
+* Using capistrano to deploy an iPhone app straight to your phone over SSH. (for jailbroken phones only)
+* etc.
