@@ -1,8 +1,8 @@
 set :application_name, "Flat 10C" 
-set :iphone_hostname, "10.0.10.195" 
+set :iphone_hostname, "nathans-iphone" 
 set :user, "root" 
 set :escaped_name, application_name.gsub(" ", '\ ')
-set :build_dir, "/Users/nathanB/src/#{application_name}/build/Release-iphoneos"
+set :build_dir, "/Users/ndbroadbent/src/#{application_name}/build/Release-iphoneos"
 
 desc "Package your iPhone application" 
 task :package do
