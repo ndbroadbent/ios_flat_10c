@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#ifdef RUN_SPECS
+#import "UISpec.h"
+#endif
 
 int main(int argc, char *argv[]) {
-    
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+	
+	#ifdef RUN_SPECS
+		[UISpec runSpecsAfterDelay:3];
+	#endif
+	
     int retVal = UIApplicationMain(argc, argv, nil, nil);
     [pool release];
     return retVal;
