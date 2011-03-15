@@ -18,15 +18,18 @@
 	IBOutlet UIImageView *httpResultImageView;
 	IBOutlet UISwitch *hallLightSwitch;
 	IBOutlet UISwitch *fanSwitch;
+	IBOutlet UISwitch *umbrellaSwitch;
 }
 
 @property (nonatomic, retain) UISwitch *hallLightSwitch;  
 @property (nonatomic, retain) UISwitch *fanSwitch;  
+@property (nonatomic, retain) UISwitch *umbrellaSwitch;  
 
 @property (nonatomic, retain) IASKAppSettingsViewController *appSettingsViewController;
 
 - (IBAction)showSettingsPush:(id)sender;
 - (IBAction)hallLightSwitchDidChange:(id)sender;
 - (IBAction)fanSwitchDidChange:(id)sender;
+- (IBAction)umbrellaSwitchDidChange:(id)sender;
 
 @end

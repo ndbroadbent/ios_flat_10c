@@ -23,6 +23,7 @@
 // Synthesize switches
 @synthesize hallLightSwitch;
 @synthesize fanSwitch;
+@synthesize umbrellaSwitch;
 
 // Synthesize and configure appSettingsViewController.
 @synthesize appSettingsViewController;
@@ -188,6 +189,32 @@
 		[request setPostValue:@"Turn Fan [ON]" forKey:@"action"];
 	} else {
 		[request setPostValue:@"Turn Fan [OFF]" forKey:@"action"];
+	}
+	
+	[request setDelegate:self];
+	[request startAsynchronous];
+}
+
+// When fan switch changes value
+- (IBAction)umbrellaSwitchDidChange:(id)sender {
+	// Show spinner
+	httpLoadingActivity.hidden = NO;
+	[httpLoadingActivity startAnimating];
+	
+	// Fetch user settings.
+	NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+	
+	NSURL *url = [NSURL URLWithString:[settings stringForKey:@"baseURL"]];
+	
+	// Send the http form post.
+	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+	[request setPostValue:[settings stringForKey:@"user"] forKey:@"user"];
+	[request setPostValue:[settings stringForKey:@"password"] forKey:@"password"];
+	
+	if (umbrellaSwitch.on) {
+		[request setPostValue:@"Turn Umbrella Bucket [ON]" forKey:@"action"];
+	} else {
+		[request setPostValue:@"Turn Umbrella Bucket [OFF]" forKey:@"action"];
 	}
 	
 	[request setDelegate:self];

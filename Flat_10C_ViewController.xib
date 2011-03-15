@@ -68,9 +68,12 @@
 					<object class="IBUISwitch" id="126981027">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{62, 98}, {94, 27}}</string>
+						<string key="NSFrame">{{62, 89}, {94, 27}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">HallLightSwitch</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -78,9 +81,12 @@
 					<object class="IBUISwitch" id="958866350">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{62, 177}, {94, 27}}</string>
+						<string key="NSFrame">{{62, 154}, {94, 27}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">LoungeFanSwitch</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -88,7 +94,7 @@
 					<object class="IBUILabel" id="172814319">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{175, 101}, {72, 21}}</string>
+						<string key="NSFrame">{{175, 92}, {72, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -113,7 +119,7 @@
 					<object class="IBUILabel" id="43077863">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{175, 180}, {92, 21}}</string>
+						<string key="NSFrame">{{175, 157}, {92, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -121,6 +127,36 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Lounge Fan</string>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
+							<reference key="NSCustomColorSpace" ref="154057569"/>
+						</object>
+						<reference key="IBUIHighlightedColor" ref="661956479"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">10</float>
+					</object>
+					<object class="IBUISwitch" id="69967186">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{62, 219}, {94, 27}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+					</object>
+					<object class="IBUILabel" id="164587858">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{175, 214}, {110, 37}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<string key="IBUIText">Umbrella Bucket</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -209,6 +245,23 @@
 					</object>
 					<int key="connectionID">40</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">umbrellaSwitchDidChange:</string>
+						<reference key="source" ref="69967186"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">43</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">umbrellaSwitch</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="69967186"/>
+					</object>
+					<int key="connectionID">44</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -238,9 +291,11 @@
 							<reference ref="559427016"/>
 							<reference ref="449018617"/>
 							<reference ref="126981027"/>
-							<reference ref="958866350"/>
 							<reference ref="172814319"/>
+							<reference ref="958866350"/>
 							<reference ref="43077863"/>
+							<reference ref="69967186"/>
+							<reference ref="164587858"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -258,13 +313,13 @@
 						<int key="objectID">32</int>
 						<reference key="object" ref="126981027"/>
 						<reference key="parent" ref="774585933"/>
-						<string key="objectName">Hall Light Switch</string>
+						<string key="objectName">HallLightSwitch</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">33</int>
 						<reference key="object" ref="958866350"/>
 						<reference key="parent" ref="774585933"/>
-						<string key="objectName">Lounge Fan Switch</string>
+						<string key="objectName">LoungeFanSwitch</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">34</int>
@@ -274,6 +329,16 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">35</int>
 						<reference key="object" ref="43077863"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">41</int>
+						<reference key="object" ref="69967186"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">42</int>
+						<reference key="object" ref="164587858"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</object>
@@ -294,6 +359,10 @@
 					<string>34.IBViewBoundsToFrameTransform</string>
 					<string>35.IBPluginDependency</string>
 					<string>35.IBViewBoundsToFrameTransform</string>
+					<string>41.IBPluginDependency</string>
+					<string>41.IBViewBoundsToFrameTransform</string>
+					<string>42.IBPluginDependency</string>
+					<string>42.IBViewBoundsToFrameTransform</string>
 					<string>6.IBEditorWindowLastContentRect</string>
 					<string>6.IBPluginDependency</string>
 					<string>6.IBViewBoundsToFrameTransform</string>
@@ -310,21 +379,29 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCeAAAwwAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCeAAAwvYAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCeAAAw08AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCeAAAwzYAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDLwAAwvoAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDLwAAwvAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDLwAAw0wAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDLwAAwzMAAA</bytes>
 					</object>
-					<string>{{619, 166}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABCeAAAw28AAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDLwAAw3QAAA</bytes>
+					</object>
+					<string>{{640, 464}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw+UAAA</bytes>
@@ -351,7 +428,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">40</int>
+			<int key="maxID">44</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -366,9 +443,11 @@
 							<string>fanSwitchDidChange:</string>
 							<string>hallLightSwitchDidChange:</string>
 							<string>showSettingsPush:</string>
+							<string>umbrellaSwitchDidChange:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -381,6 +460,7 @@
 							<string>fanSwitchDidChange:</string>
 							<string>hallLightSwitchDidChange:</string>
 							<string>showSettingsPush:</string>
+							<string>umbrellaSwitchDidChange:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -396,6 +476,10 @@
 								<string key="name">showSettingsPush:</string>
 								<string key="candidateClassName">id</string>
 							</object>
+							<object class="IBActionInfo">
+								<string key="name">umbrellaSwitchDidChange:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -406,6 +490,7 @@
 							<string>hallLightSwitch</string>
 							<string>httpLoadingActivity</string>
 							<string>httpResultImageView</string>
+							<string>umbrellaSwitch</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -413,6 +498,7 @@
 							<string>UISwitch</string>
 							<string>UIActivityIndicatorView</string>
 							<string>UIImageView</string>
+							<string>UISwitch</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -423,6 +509,7 @@
 							<string>hallLightSwitch</string>
 							<string>httpLoadingActivity</string>
 							<string>httpResultImageView</string>
+							<string>umbrellaSwitch</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -441,6 +528,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">httpResultImageView</string>
 								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">umbrellaSwitch</string>
+								<string key="candidateClassName">UISwitch</string>
 							</object>
 						</object>
 					</object>
